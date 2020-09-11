@@ -6,9 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         
-        <link rel="canonical" href="http://docs.openindiana.org/contrib/content/">
+        <link rel="canonical" href="http://docs.openindiana.org/dev/repo-cleanup/">
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Content Creation - OpenIndiana Docs</title>
+        <title>Cleaning up OpenIndiana repository - OpenIndiana Docs</title>
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -133,7 +133,7 @@
   </li>
                                 </ul>
                             </li>
-                            <li class="dropdown">
+                            <li class="dropdown active">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Handbook <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
@@ -184,35 +184,35 @@
     <ul class="dropdown-menu">
             
 <li >
-    <a href="../../dev/building-openindiana/">Building OpenIndiana</a>
+    <a href="../building-openindiana/">Building OpenIndiana</a>
 </li>
             
 <li >
-    <a href="../../dev/userland/">Building with oi-userland</a>
+    <a href="../userland/">Building with oi-userland</a>
 </li>
             
 <li >
-    <a href="../../dev/legacy-consolidations/">Building legacy consolidations</a>
+    <a href="../legacy-consolidations/">Building legacy consolidations</a>
 </li>
             
 <li >
-    <a href="../../dev/graphics-stack/">Graphics stack</a>
+    <a href="../graphics-stack/">Graphics stack</a>
 </li>
             
 <li >
-    <a href="../../dev/pdf/ips-dev-guide.pdf">Packaging and Delivering Software with IPS</a>
+    <a href="../pdf/ips-dev-guide.pdf">Packaging and Delivering Software with IPS</a>
 </li>
             
 <li >
-    <a href="../../dev/distribution-constructor/">Using distribution constructor</a>
+    <a href="../distribution-constructor/">Using distribution constructor</a>
 </li>
             
 <li >
-    <a href="../../dev/existing-tasks/">Existing tasks</a>
+    <a href="../existing-tasks/">Existing tasks</a>
 </li>
             
-<li >
-    <a href="../../dev/repo-cleanup/">Cleaning up OpenIndiana repository</a>
+<li class="active">
+    <a href="./">Cleaning up OpenIndiana repository</a>
 </li>
     </ul>
   </li>
@@ -247,40 +247,40 @@
 </li>
                                 </ul>
                             </li>
-                            <li class="dropdown active">
+                            <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contrib <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
-<li class="active">
-    <a href="./">Content Creation</a>
+<li >
+    <a href="../../contrib/content/">Content Creation</a>
 </li>
                                     
 <li >
-    <a href="../getting-started/">Getting Started</a>
+    <a href="../../contrib/getting-started/">Getting Started</a>
 </li>
                                     
 <li >
-    <a href="../tools/">Contributor Tools</a>
+    <a href="../../contrib/tools/">Contributor Tools</a>
 </li>
                                     
 <li >
-    <a href="../roles/">Contributor Roles</a>
+    <a href="../../contrib/roles/">Contributor Roles</a>
 </li>
                                     
 <li >
-    <a href="../topics/">Contributor Topics</a>
+    <a href="../../contrib/topics/">Contributor Topics</a>
 </li>
                                     
 <li >
-    <a href="../style/">Contributor Style Guide</a>
+    <a href="../../contrib/style/">Contributor Style Guide</a>
 </li>
                                     
 <li >
-    <a href="../markdown/">Markdown Syntax Guide</a>
+    <a href="../../contrib/markdown/">Markdown Syntax Guide</a>
 </li>
                                     
 <li >
-    <a href="../git/">Git Usage Guide</a>
+    <a href="../../contrib/git/">Git Usage Guide</a>
 </li>
                                 </ul>
                             </li>
@@ -293,17 +293,17 @@
                             </a>
                         </li>
                             <li >
-                                <a rel="next" href="../../books/develop/">
+                                <a rel="next" href="../existing-tasks/">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li >
-                                <a rel="prev" href="../getting-started/">
+                                <a rel="prev" href="../../books/about/">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://github.com/OpenIndiana/oi-docs/edit/master/docs/contrib/content.md"><i class="fa fa-github"></i> Edit on GitHub</a>
+                                <a href="https://github.com/OpenIndiana/oi-docs/edit/master/docs/dev/repo-cleanup.md"><i class="fa fa-github"></i> Edit on GitHub</a>
                             </li>
                     </ul>
                 </div>
@@ -313,13 +313,10 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#openindiana-content-creation">OpenIndiana Content Creation</a></li>
-            <li><a href="#why-fresh-website-content-is-so-important">Why Fresh Website Content is so Important</a></li>
-            <li><a href="#how-to-get-started">How to get started</a></li>
-            <li><a href="#smaller-works">Smaller Works</a></li>
-            <li><a href="#larger-works">Larger Works</a></li>
-            <li><a href="#finding-additional-ideas-and-suggestions">Finding additional ideas and suggestions</a></li>
-            <li><a href="#contacting-the-documentation-team">Contacting the documentation team</a></li>
+        <li class="main active"><a href="#cleaning-up-openindiana-repository">Cleaning up OpenIndiana repository</a></li>
+            <li><a href="#tasks-held-on-the-build-server">Tasks held on the build server</a></li>
+            <li><a href="#tasks-held-on-the-package-server">Tasks held on the package server</a></li>
+            <li><a href="#final-steps-and-testing">Final steps and testing</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
@@ -332,82 +329,121 @@ A copy of the License is available at http://illumos.org/license/PDL.
 
 The Original Documentation is _________________.
 
-The Initial Writer of the Original Documentation is ___________ Copyright (C)_________[Insert year(s)].
-All Rights Reserved. (Initial Writer contact(s):________________[Insert hyperlink/alias]).
-
-Contributor(s): ______________________________________.
-
-Portions created by ______ are Copyright (C)_________[Insert year(s)].
-All Rights Reserved. (Contributor contact(s):________________[Insert hyperlink/alias]).
+The Initial Writer of the Original Documentation is Alexander Pyhalov Copyright (C) 2020
+All Rights Reserved.
 
 -->
 
 <p><img src = "../../Openindiana.png"></p>
-<h1 id="openindiana-content-creation">OpenIndiana Content Creation</h1>
+<h1 id="cleaning-up-openindiana-repository">Cleaning up OpenIndiana repository</h1>
 <p><i class="fa fa-info-circle fa-lg" aria-hidden="true"></i> <strong>NOTE:</strong>
-<div class="well"></p>
-<h2 id="why-fresh-website-content-is-so-important">Why Fresh Website Content is so Important</h2>
-<p>Good docs and a steady stream of fresh website content inspires confidence in the project.
-These things show the project is alive and thriving.
-Here are a couple of end user quotes which serve as a reminder.</p>
-<h3 id="a-user-comment-posted-to-the-oi-wiki-in-2011">A User Comment Posted to the OI Wiki in 2011</h3>
-<blockquote>
-<p>Documentation such as a manual is essential in not just learning from, it tells everyone where the product is in the scheme of things.
-Referring to Oracle for documentation relating to OI just makes one have less confidence with OI itself.
-Look at the FreeBSD site documentation levels are really good and gives people confidence to try FreeBSD and its derivatives.</p>
-</blockquote>
-<h3 id="a-user-comment-posted-to-the-freebsd-forum-in-2013">A User Comment Posted to the FreeBSD Forum in 2013</h3>
-<blockquote>
-<p>FreeBSD has been around almost as long as Unix itself existed (not entirely true, but you get the idea) and same can be said for Solaris as it was.
-Yet the OpenSolaris group basically still has to prove themselves.
-For all I know (from a commercial point of view) they could be gone next month.
-That makes it a liability, especially in comparison to Sun being out of the picture and the love/hate relationship with Oracle.</p>
-</blockquote>
-<p>The goal of this page is to inspire you to contribute to the OpenIndiana Project by assisting with content creation.</p>
+<div class="well">
+This is an internal document provided mostly for OpenIndiana maintainers
+</div></p>
+<p>Due to current CI practices, OpenIndiana Hipster repository tend to bloat with old package versions.
+This causes several issues:</p>
 <ul>
-<li>Contributing doesn't mean you need to get involved in anything major.</li>
-<li>Start small and only later consider taking on something larger.</li>
-<li>Your contribution does not have to be confined to the OpenIndiana Docs website.</li>
-<li>Any and all contributions which help further the development and promotion of OpenIndiana are welcome.</li>
+<li><code>pkg(1)</code> starts consuming a lot of memory during planning stage;</li>
+<li>refreshing repository index becomes the longest step in Jenkins build jobs;</li>
+<li>storage space is wasted on pkg and build servers.</li>
 </ul>
-</div>
+<p>To fix these issues currently periodic manual cleanup is necessary.
+Note that during cleanup we preserve only latest versions of packages.
+Given that it's usually just 10-20% of all published packages, using <code>pkgrepo  remove</code> is impractical.</p>
+<p>The cleanup should be done on two sides: on the side of pkg server (pkg.openindiana.org) and on build server (hipster.openindiana.org) to avoid resyncing old package versions from build server to the pkg depot server.</p>
+<p>Be sure to disable Jenkins jobs prior to the operation.</p>
+<p>As transfering packages takes significant time (about an hour on build server and several hours on pkg server), you likely want to perform operations on both of them simultaneously.</p>
+<h2 id="tasks-held-on-the-build-server">Tasks held on the build server</h2>
+<p>We should cleanup packages produced by illumos-gate and oi-userland Jenkins jobs.</p>
+<p>We generally don't care about packages, produced by illumos-gate build job.
+They can be simply removed.
+Remove them from build area:</p>
+<pre><code class="bash">cd /jenkins/jobs/illumos-gate/workspace/components/openindiana/illumos-gate/
+rm -fr build/i386/pkgre*
+rm -fr illumos-gate/packages/i386/nightly*
+</code></pre>
 
-<h2 id="how-to-get-started">How to get started</h2>
-<ol>
-<li>Begin by reading the <a href="../getting-started/">Getting Started</a> page.</li>
-<li>Then have a look at the <a href="../style/">Contributor Style Guide</a>.</li>
-<li>As needed, reference the <a href="../markdown/">Markdown Syntax Guide</a> to help you along the way.</li>
-</ol>
-<p>When you are ready to begin contributing, pick a doc and then:</p>
+<p>and repository:</p>
+<pre><code class="bash">cd /jenkins/jobs/illumos-gate/workspace/i386/repo/
+rm -fr publisher/openindiana.org/*
+</code></pre>
+
+<p>Packages, produced by oi-userland build job, are used to generate userland-incorporation, so we can't just drop them.
+We create new repository and populate it with latest packages.
+This step takes some time, so be sure to run it in screen or tmux environment.</p>
+<pre><code class="bash">cd /jenkins/jobs/oi-userland/workspace/i386/repo/
+mkdir repo.new
+cp repo/pkg5.repository repo.new/
+pkgrecv -s repo --newest | tee pkg-list
+cat pkg-list | split -l 100
+for i in $(ls x*); do pkgrecv -s repo -d repo.new $(cat $i); done
+</code></pre>
+
+<p>Check that resulting repo contains all packages from old repository (diff should be empty).</p>
+<pre><code class="bash">pkgrecv -s repo --newest &gt; /tmp/old.packages
+pkgrecv -s repo.new --newest &gt; /tmp/new.packages
+diff -u /tmp/old.packages /tmp/new.packages
+</code></pre>
+
+<p>If diff is not empty, investigate the issue and use <code>pkgrecv</code> to transfer missing packages individually.</p>
+<p>When everything is fine, perform final cleanup.</p>
+<pre><code class="bash">pkgrepo -s repo.new rebuild
+rm x* pkg-list
+</code></pre>
+
+<p>Now you are ready to replace old repository with the new one.</p>
+<pre><code class="bash">rm -fr repo
+mv repo.new repo
+</code></pre>
+
+<h2 id="tasks-held-on-the-package-server">Tasks held on the package server</h2>
+<p>The procedure is essentially the same, we create new repository and transfer latest packages and custom scripts from the old repository to the new one.
+Scripts mentioned here are partially used by rsync jobs to update repository and partially can be used by pkg server administrator to perform repository maintenance.</p>
+<p>You should start by creating new filesystem for the repository.
+File systems on the pkg server has UUID in its name, it's replaced by literal <code>UUID</code> here.</p>
+<pre><code class="bash">zfs create zones/UUID/data/repos/pkg.openindiana.org/hipster-new
+</code></pre>
+
+<p>Copy necessary scripts and files from old repository:</p>
+<pre><code class="bash">cp -r /data/repos/pkg.openindiana.org/hipster/{pkg5.repository,scripts,add-content.sh} /data/repos/pkg.openindiana.org/hipster-new/
+</code></pre>
+
+<p>Make necessary directories:</p>
+<pre><code class="bash">cd /data/repos/pkg.openindiana.org/hipster-new
+mkdir .empty .temp .temp/.openindiana.org
+</code></pre>
+
+<p>Transfer data from current repository (the script essentially does the same batched pkgrecv as we've done on the build server):</p>
+<pre><code class="bash">bash scripts/create-new-repo.sh
+</code></pre>
+
+<p>Check that resulting repo contains all packages from old repository (diff should be empty).</p>
+<pre><code class="bash">pkgrecv -s /data/repos/pkg.openindiana.org/hipster-new/ --newest &gt; /tmp/new.packages
+pkgrecv -s /data/repos/pkg.openindiana.org/hipster/ --newest &gt; /tmp/old.packages
+diff -u /tmp/old.packages /tmp/new.packages
+</code></pre>
+
+<p>If diff is not empty, investigate the issue and use <code>pkgrecv</code> to transfer missing packages individually.</p>
+<p>When everything is fine, perform final cleanup.</p>
+<pre><code class="bash">pkgrepo -s . rebuild
+rm x* pkg-list
+</code></pre>
+
+<p>Make pkg server actually use new repository.
+Ensure that you minimise time between disabling pkg server and enabling it again - during this interval it's evidently unusable to the clients.</p>
+<pre><code class="bash">cd /
+svcadm disable svc:/application/pkg/server:hipster
+zfs rename zones/UUID/data/repos/pkg.openindiana.org/hipster zones/UUID/data/repos/pkg.openindiana.org/hipster-old
+zfs rename zones/UUID/data/repos/pkg.openindiana.org/hipster-new zones/UUID/data/repos/pkg.openindiana.org/hipster
+svcadm enable svc:/application/pkg/server:hipster
+</code></pre>
+
+<h2 id="final-steps-and-testing">Final steps and testing</h2>
+<p>Don't forget to enable Jenkins jobs, which you've disabled before cleanup.</p>
 <ul>
-<li>Add additional sectional placeholders.</li>
-<li>Add in some TODO's.</li>
-<li>Add some reference materials.</li>
-<li>Author a single section.</li>
-<li>Review for technical accuracy.</li>
-</ul>
-<h2 id="smaller-works">Smaller Works</h2>
-<ul>
-<li>FAQ maintenance</li>
-<li>Writing a news story for the OpenIndiana website</li>
-<li>Writing an episode of Hipster news</li>
-<li>Writing a task based tutorial.</li>
-</ul>
-<h2 id="larger-works">Larger Works</h2>
-<ul>
-<li>User Handbook development</li>
-<li>Developer Handbook development</li>
-<li>Reviewing the OpenSolaris books for technical accuracy and generating errata.</li>
-</ul>
-<h2 id="finding-additional-ideas-and-suggestions">Finding additional ideas and suggestions</h2>
-<p>See the <a href="../topics/">Contributor Topics</a> page for specific items which need further development.</p>
-<h2 id="contacting-the-documentation-team">Contacting the documentation team</h2>
-<p>To make a suggestion or report a problem with a document, please make your request by submitting a <a href="https://github.com/OpenIndiana/oi-docs/issues">Github issue</a>.</p>
-<p>The docs team can be reached via email: <em><strong>docs at openindiana.org</strong></em>.</p>
-<p>You may also inquire via IRC:</p>
-<ul>
-<li><a href="irc://irc.freenode.net/openindiana">#openindiana (freenode)</a></li>
-<li><a href="irc://irc.freenode.net/oi-dev">#oi-dev (freenode)</a></li>
+<li>Visit <a href="http://pkg.openindiana.org/hipster/">http://pkg.openindiana.org/hipster/</a> and check that search works correctly.</li>
+<li>Run some Jenkins build job to ensure that interaction between hipster.openindiana.org and pkg.openindiana.org works correctly.</li>
+<li>Don't forget to destroy <code>zones/UUID/data/repos/pkg.openindiana.org/hipster-old</code> filesystem in several days after cleanup.</li>
 </ul></div>
         </div>
 
