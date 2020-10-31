@@ -1474,28 +1474,27 @@ Or alternately, when presented with the Live Media installer options menu, selec
 </div></p>
 <p><i class="fa fa-info-circle fa-lg" aria-hidden="true"></i> <strong>NOTE:</strong>
 <div class="well">
-After you have installed OpenIndiana, if you have another operating system installed, you might need to update loader configuration.
-Usually you can achieve desired effect by chainloading partitions with other operating systems.
-To configure illumos loader to show additional entry for chainloading another loader, create file in /boot/conf.d directory,
-containing string
-<code>set chain_disk="disk0:"</code>,
+After you have installed OpenIndiana, if you have another operating system installed, you might need to update the loader configuration.
+Usually you can achieve the desired effect by chainloading partitions with other operating systems.
+To configure the illumos loader to show an additional entry for chainloading another loader, create a file in /boot/conf.d directory,
+containing the string
+<code>chain_disk="disk0:"</code>,
 where disk0 is the name of disk or partition to boot from.
-You can get the list of available disks from loader prompt using <code>lsdev</code> command.
-</div></p>
-<p><i class="fa fa-info-circle fa-lg" aria-hidden="true"></i> <strong>DOC TEAM NOTE:</strong>
-<div class="well">
-Write about:</p>
-<ul>
-<li>How to configure the Linux GRUB2 bootloader to chainload an OpenIndiana partition</li>
-</ul>
-<pre><code>[13:08:17] &lt;tsoome&gt; configure chainloader to load illumos partition
-[13:11:02] &lt;tsoome&gt; the chain load is the safest option - you let the native boot loader to do all the work and thats it.
-[14:10:43] &lt;tsoome&gt; yep, you need to configure it to read partition boot block and execute it.
-[14:11:43] &lt;tsoome&gt; this way you dont have to worry about updates etc
+You can get the list of available disks from loader prompt using <code>lsdev</code> command.</p>
+<p>If you use GRUB2, you can configure it to show an entry for chainloading the illumos loader.
+Add the following to a file in the /etc/grub.d directory (usually the placeholder '40_custom' file can be used) of the Linux installation:</p>
+<pre><code>menuentry &quot;Chainload OpenIndiana&quot; {
+    set root=(hd0,2)
+    chainloader +1
+}
 </code></pre>
 
-</div>
-
+<p>where hd0,2 is the location of the partition or disk containing the illumos loader.
+You can list detected disks/partitions from the GRUB prompt using the <code>ls</code> command.
+From Linux you can run <code>sudo fdisk -l</code> to list disks and partitions. The partition 'sda2' would map to 'hd0,2' in GRUB.
+After making changes you must run <code>sudo update-grub</code>,
+this updates the auto-generated GRUB configuration stored in /boot/grub/grub.cfg.
+</div></p>
 <h3 id="install-openindiana-using-the-text-installer">Install OpenIndiana using the Text Installer</h3>
 <p><i class="fa fa-info-circle fa-lg" aria-hidden="true"></i> <strong>NOTE:</strong>
 <div class="well">
@@ -2747,7 +2746,7 @@ Write about:</p>
         </footer>
         <script>
             var base_url = "../..",
-                shortcuts = {"next": 78, "help": 191, "search": 83, "previous": 80};
+                shortcuts = {"next": 78, "previous": 80, "help": 191, "search": 83};
         </script>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>

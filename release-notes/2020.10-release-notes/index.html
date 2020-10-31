@@ -6,9 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         
-        <link rel="canonical" href="http://docs.openindiana.org/retired/bsd/">
+        <link rel="canonical" href="http://docs.openindiana.org/release-notes/2020.10-release-notes/">
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Bsd - OpenIndiana Docs</title>
+        <title>2020.10 release notes - OpenIndiana Docs</title>
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -83,51 +83,51 @@
     <ul class="dropdown-menu">
             
 <li >
-    <a href="../../release-notes/latest-changes/">Latest changes</a>
+    <a href="../latest-changes/">Latest changes</a>
 </li>
             
 <li >
-    <a href="../../release-notes/2020.04-release-notes/">2020.04 Release Notes</a>
+    <a href="../2020.04-release-notes/">2020.04 Release Notes</a>
 </li>
             
 <li >
-    <a href="../../release-notes/2019.10-release-notes/">2019.10 Release Notes</a>
+    <a href="../2019.10-release-notes/">2019.10 Release Notes</a>
 </li>
             
 <li >
-    <a href="../../release-notes/2019.04-release-notes/">2019.04 Release Notes</a>
+    <a href="../2019.04-release-notes/">2019.04 Release Notes</a>
 </li>
             
 <li >
-    <a href="../../release-notes/2018.10-release-notes/">2018.10 Release Notes</a>
+    <a href="../2018.10-release-notes/">2018.10 Release Notes</a>
 </li>
             
 <li >
-    <a href="../../release-notes/2018.04-release-notes/">2018.04 Release Notes</a>
+    <a href="../2018.04-release-notes/">2018.04 Release Notes</a>
 </li>
             
 <li >
-    <a href="../../release-notes/2017.10-release-notes/">2017.10 Release Notes</a>
+    <a href="../2017.10-release-notes/">2017.10 Release Notes</a>
 </li>
             
 <li >
-    <a href="../../release-notes/2017.04-release-notes/">2017.04 Release Notes</a>
+    <a href="../2017.04-release-notes/">2017.04 Release Notes</a>
 </li>
             
 <li >
-    <a href="../../release-notes/2016.10-release-notes/">2016.10 Release Notes</a>
+    <a href="../2016.10-release-notes/">2016.10 Release Notes</a>
 </li>
             
 <li >
-    <a href="../../release-notes/2016.04-release-notes/">2016.04 Release Notes</a>
+    <a href="../2016.04-release-notes/">2016.04 Release Notes</a>
 </li>
             
 <li >
-    <a href="../../release-notes/2015.10-release-notes/">2015.10 Release Notes</a>
+    <a href="../2015.10-release-notes/">2015.10 Release Notes</a>
 </li>
             
 <li >
-    <a href="../../release-notes/2015.03-release-notes/">2015.03 Release Notes</a>
+    <a href="../2015.03-release-notes/">2015.03 Release Notes</a>
 </li>
     </ul>
   </li>
@@ -293,7 +293,7 @@
                             </a>
                         </li>
                             <li>
-                                <a href="https://github.com/OpenIndiana/oi-docs/edit/master/docs/retired/bsd.md"><i class="fa fa-github"></i> Edit on GitHub</a>
+                                <a href="https://github.com/OpenIndiana/oi-docs/edit/master/docs/release-notes/2020.10-release-notes.md"><i class="fa fa-github"></i> Edit on GitHub</a>
                             </li>
                     </ul>
                 </div>
@@ -303,9 +303,15 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#content-management-the-bsd-approach">Content Management - The BSD Approach</a></li>
-            <li><a href="#examining-the-bsd-websites-and-handbooks">Examining the BSD Websites and Handbooks</a></li>
-            <li><a href="#what-can-we-learn-from-this">What can we learn from this?</a></li>
+        <li class="main active"><a href="#202010-release-notes">2020.10 Release notes</a></li>
+            <li><a href="#security">Security</a></li>
+            <li><a href="#general-system-changes">General system changes</a></li>
+            <li><a href="#desktop-software-and-libraries">Desktop software and libraries</a></li>
+            <li><a href="#common-tools-and-libraries">Common tools and libraries</a></li>
+            <li><a href="#development-tools-and-libraries">Development tools and libraries</a></li>
+            <li><a href="#server-software">Server software</a></li>
+            <li><a href="#illumos">illumos</a></li>
+            <li><a href="#contributors">Contributors</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
@@ -318,134 +324,183 @@ A copy of the License is available at http://illumos.org/license/PDL.
 
 The Original Documentation is _________________.
 
-The Initial Writer of the Original Documentation is ___________ Copyright (C)_________[Insert year(s)].
+The Initial Writer of the Original Documentation is Alexander Pyhalov Copyright (C) 2020.
 All Rights Reserved. (Initial Writer contact(s):________________[Insert hyperlink/alias]).
 
-Contributor(s): ______________________________________.
+Contributor(s):   ____
 
-Portions created by ______ are Copyright (C)_________[Insert year(s)].
+Portions created by Andreas Wacknitz are Copyright (C) 2020.
 All Rights Reserved. (Contributor contact(s):________________[Insert hyperlink/alias]).
 
 -->
 
-<h1 id="content-management-the-bsd-approach">Content Management - The BSD Approach</h1>
-<p>Here we take a quick look at PC-BSD and FreeBSD projects and examine their approaches to content management.</p>
-<h2 id="examining-the-bsd-websites-and-handbooks">Examining the BSD Websites and Handbooks</h2>
-<h3 id="pcbsd">PCBSD</h3>
-<h4 id="website">Website</h4>
+<p><img src = "../../Openindiana.png"></p>
+<h1 id="202010-release-notes">2020.10 Release notes</h1>
+<p>We are glad to announce that Hipster 2020.10 snapshot is available.</p>
+<table>
+<thead>
+<tr>
+<th>Image</th>
+<th>Checksum</th>
+<th>GPG signature</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="http://dlc.openindiana.org/isos/hipster/20201031/OI-hipster-gui-20201031.iso">OI-hipster-gui-20201031.iso</a></td>
+<td>[<a href="http://dlc.openindiana.org/isos/hipster/20201031/OI-hipster-gui-20201031.iso.sha256sum">SHA256</a>]</td>
+<td>[<a href="http://dlc.openindiana.org/isos/hipster/20201031/OI-hipster-gui-20201031.iso.sig">SIG</a>]</td>
+</tr>
+<tr>
+<td><a href="http://dlc.openindiana.org/isos/hipster/20201031/OI-hipster-gui-20201031.usb">OI-hipster-gui-20201031.usb</a></td>
+<td>[<a href="http://dlc.openindiana.org/isos/hipster/20201031/OI-hipster-gui-20201031.usb.sha256sum">SHA256</a>]</td>
+<td>[<a href="http://dlc.openindiana.org/isos/hipster/20201031/OI-hipster-gui-20201031.usb.sig">SIG</a>]</td>
+</tr>
+<tr>
+<td><a href="http://dlc.openindiana.org/isos/hipster/20201031/OI-hipster-text-20201031.iso">OI-hipster-text-20201031.iso</a></td>
+<td>[<a href="http://dlc.openindiana.org/isos/hipster/20201031/OI-hipster-text-20201031.iso.sha256sum">SHA256</a>]</td>
+<td>[<a href="http://dlc.openindiana.org/isos/hipster/20201031/OI-hipster-text-20201031.iso.sig">SIG</a>]</td>
+</tr>
+<tr>
+<td><a href="http://dlc.openindiana.org/isos/hipster/20201031/OI-hipster-text-20201031.usb">OI-hipster-text-20201031.usb</a></td>
+<td>[<a href="http://dlc.openindiana.org/isos/hipster/20201031/OI-hipster-text-20201031.usb.sha256sum">SHA256</a>]</td>
+<td>[<a href="http://dlc.openindiana.org/isos/hipster/20201031/OI-hipster-text-20201031.usb.sig">SIG</a>]</td>
+</tr>
+<tr>
+<td><a href="http://dlc.openindiana.org/isos/hipster/20201031/OI-hipster-minimal-20201031.iso">OI-hipster-minimal-20201031.iso</a></td>
+<td>[<a href="http://dlc.openindiana.org/isos/hipster/20201031/OI-hipster-minimal-20201031.iso.sha256sum">SHA256</a>]</td>
+<td>[<a href="http://dlc.openindiana.org/isos/hipster/20201031/OI-hipster-minimal-20201031.iso.sig">SIG</a>]</td>
+</tr>
+<tr>
+<td><a href="http://dlc.openindiana.org/isos/hipster/20201031/OI-hipster-minimal-20201031.usb">OI-hipster-minimal-20201031.usb</a></td>
+<td>[<a href="http://dlc.openindiana.org/isos/hipster/20201031/OI-hipster-minimal-20201031.usb.sha256sum">SHA256</a>]</td>
+<td>[<a href="http://dlc.openindiana.org/isos/hipster/20201031/OI-hipster-minimal-20201031.usb.sig">SIG</a>]</td>
+</tr>
+</tbody>
+</table>
+<p><a href="../../handbook/openindiana-download-mirrors/">List of mirrors</a></p>
+<h2 id="security">Security</h2>
+<!-- Correct link to the public key would be http://hkps.pool.sks-keyservers.net/pks/lookup?op=get&search=0x3A021AFADBE31887 , but somehow key is still not updated in web interface -->
+
+<p>This release is signed and verifiable by GPG. The OpenIndiana Release Engineering key has key id 0x3a021afadbe31887.</p>
+<p>The public key (note, the key was updated at 2020-05-05):</p>
+<pre><code>-----BEGIN PGP PUBLIC KEY BLOCK-----
+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
+FcTZ+7bRiQ==
+=niUq
+-----END PGP PUBLIC KEY BLOCK-----
+</code></pre>
+
+<p>How to verify:</p>
 <ul>
-<li>website: <a href="http://www.pcbsd.org/">http://www.pcbsd.org/</a></li>
-<li>Well laid out, clutter free.</li>
-<li>Download buttons are present right on home page.</li>
-<li>Hosted on WordPress</li>
+<li>Download <code>&lt;ISO&gt;.sig</code> file from mirror</li>
+<li>Run: <code>gpg2 --verify &lt;ISO&gt;.sig &lt;ISO&gt;</code>. You should see the following output:</li>
 </ul>
-<h4 id="handbook">Handbook</h4>
+<pre><code>    gpg: Warning: using insecure memory!
+    gpg: Signature made May  5, 2020 at 06:18:21 AM UTC
+    gpg:                using RSA key F5E984E5ADD29578D45CC1FE3A021AFADBE31887
+    gpg: Good signature from &quot;OpenIndiana Release Engineering&quot; [ultimate]
+</code></pre>
+
+<p>Even if the output includes:</p>
+<pre><code>    gpg: WARNING: This key is not certified with a trusted signature!
+    gpg: There is no indication that the signature belongs to the owner.
+</code></pre>
+
+<p>The signature is still correct.</p>
+<h2 id="general-system-changes">General system changes</h2>
 <ul>
-<li>handbook: <a href="http://web.pcbsd.org/doc-archive/10.2/html/pcbsd.html">http://web.pcbsd.org/doc-archive/10.2/html/pcbsd.html</a></li>
-<li>Nice intuitive navigation pane on left side - (Newer versions allow navigation pane to be toggled out of the way)</li>
-<li>Clutter free as it only shows one section at a time.</li>
-<li>Lots of color, bold text, large fonts, lots of screen shots, etc.</li>
-<li>Breadcrumbs on top, but not on bottom.</li>
-<li>example of their handbook page source: <a href="http://web.pcbsd.org/doc-archive/10.2/html/_sources/install.txt">http://web.pcbsd.org/doc-archive/10.2/html/_sources/install.txt</a></li>
-<li>Very simple <a href="http://docutils.sourceforge.net/rst.html">reStructuredText markup</a> - Similar to ASCIIDOC or Creole</li>
+<li>As BHyVe has been upstreamed into illumos-gate we now have another type-2 hypervisor.</li>
+<li>With the help of the OmniOSce people we added a BHyVe branded zone.</li>
 </ul>
-<h3 id="freebsd">FreeBSD</h3>
-<h4 id="website_1">Website</h4>
+<h2 id="desktop-software-and-libraries">Desktop software and libraries</h2>
 <ul>
-<li>website - <a href="https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/">https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/</a></li>
-<li>well defined and well organized navigational dropdowns</li>
-<li>Lots of color used to delineate one piece of information from another</li>
-<li>Very consistent style used throughout entire website</li>
+<li>Mate was updated to 1.24</li>
+<li>VirtualBox was updated to 6.1.16</li>
+<li>VLC was updated to 3.0.11.1</li>
+<li>qt5 was updated to 5.12.9</li>
 </ul>
-<h4 id="handbook_1">Handbook</h4>
+<h2 id="common-tools-and-libraries">Common tools and libraries</h2>
 <ul>
-<li>Handbook - <a href="https://www.freebsd.org/doc/handbook/book.html">https://www.freebsd.org/doc/handbook/book.html</a></li>
-<li>Red text used for hyperlinks</li>
-<li>gray boxes used to delineate columns of information from each other.</li>
-<li>Each page has it's own navigational breadcrumbs (top and bottom, left and right)</li>
+<li>mozilla-nspr libraries were updated to 4.29</li>
+<li>mozilla-nss libraries were updated to 3.51.1</li>
+<li>sudo was updated to 1.9.3p1</li>
+<li>SQLite was updated to 3.33</li>
+<li>nano was updated to 5.3</li>
+<li>emacs was updated to 27.1</li>
 </ul>
-<h2 id="what-can-we-learn-from-this">What can we learn from this?</h2>
-<h3 id="the-bsd-websites">The BSD Websites</h3>
+<h2 id="development-tools-and-libraries">Development tools and libraries</h2>
 <ul>
-<li>Both of the BSD websites are very fresh and modern.</li>
-<li>Navigation is very straightforward and intuitive.</li>
-<li>Information is clearly delineated.</li>
-<li>Clutter free.</li>
-<li>Neither project is using a wiki, rather all content is served from the same location.</li>
+<li>GCC 10.2.0 was added</li>
+<li>Python 3.7.7 was added, Python 3.5 updated to 3.5.10, and 3.4 removed</li>
+<li>Golang 1.14.8 and 1.15.3 were added</li>
+<li>PHP was updated to 7.3.21</li>
+<li>Git was updated to 2.29.2</li>
 </ul>
-<h3 id="pcbsd-handbook">PCBSD Handbook</h3>
+<h2 id="server-software">Server software</h2>
 <ul>
-<li>The PCBSD Project is using <a href="http://www.sphinx-doc.org/en/stable/index.html">Sphinx</a> for their handbook.</li>
-<li>Python Project also uses restructuredtext based Sphinx for their documentation (you'll notice the similarities).</li>
-<li>Skill level required for contributing to docs project is much lower than it would be for docbook</li>
-<li>The PCBSD handbook is searchable (Sphinx uses several javascripts to do this).</li>
-<li>The PCBSD Handbook is hosted as static HTML.</li>
+<li>PostgreSQL 9.5 - 12 were updated to latest minor releases</li>
+<li>MariaDB was updated to 10.3.24, 10.1.46</li>
+<li>Percona server was updated to 5.6.49.89.0, 5.7.31.34</li>
+<li>Apache was updated to 2.4.46</li>
+<li>Tomcat was updated to 8.5.59</li>
+<li>Samba was updated to 4.12.5.</li>
+<li>Node.js 8 was removed and Node.js 14.15.0 was added. The other Node.js versions were updated to 12.19.0, 10.23.0</li>
+<li>BIND was updated to 9.16.6</li>
+<li>tor was updated to 0.4.4.5</li>
 </ul>
-<h3 id="freebsd-handbook">FreeBSD Handbook</h3>
-<ul>
-<li>The FreeBSD Project is using <a href="http://www.docbook.org/">Docbook</a> for their handbook.</li>
-<li>Sun used solbook (derived from docbook).
-Redhat most likely uses Docbook as well.</li>
-<li>Skill level required to contribute to docs project is somewhat higher than it would be for restructuredtext based Sphinx.</li>
-<li>The FreeBSD handbook is not searchable.</li>
-<li>The FreeBSD Handbook is hosted as static HTML.</li>
-</ul>
-<h3 id="handbook-toc-structure-used-by-pc-bsd">Handbook TOC Structure used by PC-BSD</h3>
-<ul>
-<li>Introduction</li>
-<li>Pre-Installation Tasks</li>
-<li>Installing PC-BSD</li>
-<li>Post Installation Configuration and Installation Troubleshooting</li>
-<li>Advanced Installation Topics</li>
-<li>Desktops</li>
-<li>Installing Applications and Keeping PC-BSD® Updated</li>
-<li>Control-Panel</li>
-<li>Using PC-BSD®</li>
-<li>Finding Help</li>
-<li>Supporting PC-BSD®</li>
-</ul>
-<h3 id="handbook-toc-structure-used-by-free-bsd">Handbook TOC Structure used by Free-BSD</h3>
-<h4 id="getting-started">Getting Started</h4>
-<ul>
-<li>Introduction</li>
-<li>Installing FreeBSD</li>
-<li>Unix Basics</li>
-<li>Installing Applications - Packages and Ports</li>
-<li>The X-Window System</li>
-</ul>
-<h4 id="common-tasks">Common Tasks</h4>
-<ul>
-<li>Desktop Applications</li>
-<li>Multimedia</li>
-<li>Configuring the FreeBSD Kernel</li>
-<li>Printing</li>
-<li>Linux Binary Compatibility</li>
-</ul>
-<h4 id="system-administration">System Administration</h4>
-<ul>
-<li>Configuration and Tuning</li>
-<li>FreeBSD Boot Process</li>
-<li>Security</li>
-<li>Jails</li>
-<li>Mandatory Access Control</li>
-<li>Security Event Auditing</li>
-<li>Storage</li>
-<li>GEOM</li>
-<li>The Z File system</li>
-<li>Virtualization</li>
-<li>Localization</li>
-<li>Updating and Upgrading</li>
-<li>Dtrace</li>
-</ul>
-<h4 id="network-communications">Network Communications</h4>
-<ul>
-<li>Serial communications</li>
-<li>PPP</li>
-<li>Electronic mail</li>
-<li>Network servers</li>
-<li>Firewalls</li>
-<li>Advanced networking</li>
-</ul></div>
+<p>A lot of other bug fixes and minor software updates are included.</p>
+<h2 id="illumos">illumos</h2>
+<p>As always, we are proud to ship the latest illumos-gate bits (<a href="https://github.com/illumos/illumos-gate/commit/06524cf4e4f6c18e557fb244d42a8e47dba3b1b6">06524c</a>).</p>
+<h2 id="contributors">Contributors</h2>
+<p>Following developers contributed to the 2020.10 snapshot with more than 660 commits.
+We very much appreciate their contributions: Joshua M. Clulow, Evgeny, Andy Fiddaman, Carsten Grzemba, Nona Hansel, Jim Klimov, Aurélien Larcher, Gary Mills, Michal Nowak, Alexander Pyhalov, Toomas Soome, David Stes, Adam Števko, svschmel, Rick V, Andreas Wacknitz, Till Wegmüller, Rouven Weiler and Marco van Wieringen.</p></div>
         </div>
 
         <footer class="col-md-12">
