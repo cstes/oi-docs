@@ -1519,8 +1519,16 @@ Navigation within the installer is performed by pressing specifically designated
   <li>To install to RAIDZ, select 3 or more disks.</li>
 </ul>
 
-</div>
-
+<p><br>
+<b>GUI Desktop may be added post-installation</b>
+<Ul>
+ <li>To install MATE Desktop Environment</li>
+ <pre>
+ # pkg install mate_install
+ # pkg uninstall mate_install
+ # init 6
+ </pre>
+</div></p>
 <p><a name="welcome-screen"></a>
 <img alt="Welcome Screen" src="../images/text_install/text_install_01.png" /></p>
 <p>The text based installation process begins with the welcome screen, which provides the following information:</p>
@@ -2751,7 +2759,7 @@ Write about:</p>
         </footer>
         <script>
             var base_url = "../..",
-                shortcuts = {"previous": 80, "next": 78, "search": 83, "help": 191};
+                shortcuts = {"next": 78, "search": 83, "help": 191, "previous": 80};
         </script>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>
