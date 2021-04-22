@@ -1757,6 +1757,12 @@ This feature is intended for advanced users.
 It's assumed you know what you are doing.
 Multi-booting of another operating system and OpenIndiana on the same root pool can be possible, but such configuration is out of scope of this tutorial and is not supported.
 </div></p>
+<p><i class="fa fa-info-circle fa-lg" aria-hidden="true"></i> <strong>NOTE:</strong>
+<div class="well">
+OpenIndiana supports booting from a RAIDZ pool, however you must confirm that all vdevs are accessible from
+the boot loader.
+From the boot loader menu, choose Escape to loader prompt and run lsdev to confirm the disks are present.
+</div></p>
 <p>To start installation to existing ZFS pool, press <code>F5</code> key when <a href="#welcome-screen">Welcome Screen</a> is presented.</p>
 <p>Installer will present you a 'Pools' screen.</p>
 <p><img alt="Pools Screen" src="../images/text_install/text_install_pools_screen.png" /></p>
@@ -2759,7 +2765,7 @@ Write about:</p>
         </footer>
         <script>
             var base_url = "../..",
-                shortcuts = {"next": 78, "search": 83, "help": 191, "previous": 80};
+                shortcuts = {"search": 83, "next": 78, "previous": 80, "help": 191};
         </script>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>

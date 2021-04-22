@@ -442,11 +442,21 @@ the <a href="https://www.freedesktop.org/">freedesktop.org</a> community.</p>
 </tr>
 </tbody>
 </table>
-<p>The drivers series 340.xx is currently part of oi-userland, others may be installed manually following Nvidia's instructions.</p>
-<p>Note on new driver installations:</p>
+<p>The drivers series 340.xx, 390.xx, and 490.xx are currently part of oi-userland, others may be installed manually following Nvidia's instructions.</p>
+<p>The 390.xx drivers are current default.</p>
+<p>Note on switching driver versions</p>
+<pre><code># beadm create nvidia-460
+# beadm mount nvidia-460 /tmp/nvidia-460
+# pkg -R /tmp/nvidia-460 uninstall xorg-video nvidia nvidia-390
+# pkg -R /tmp/nvidia-460 install nvidia-460
+# beadm activate nvidia-460
+# init 6
+</code></pre>
+
+<p>Note on manual driver installations:</p>
 <pre><code># beadm create oi-nvidia
 # beadm mount oi-nvidia /mnt
-# pkg -R /mnt uninstall driver/graphics/nvidia
+# pkg -R /mnt uninstall xorg-video driver/graphics/nvidia
 # /bin/sh NVIDIA-Solaris-x86-390.48.run --extract-only
 # cd NVIDIA-Solaris-x86-390.48
 # pkgadd -R /mnt -d . NVDAgraphics NVDAgraphicsr
@@ -2417,7 +2427,7 @@ $ git pull --depth=1 origin drm-intel-fixes
         </footer>
         <script>
             var base_url = "../..",
-                shortcuts = {"next": 78, "search": 83, "help": 191, "previous": 80};
+                shortcuts = {"search": 83, "next": 78, "previous": 80, "help": 191};
         </script>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>

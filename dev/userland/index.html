@@ -483,6 +483,10 @@ gmake setup
 pfexec pkg set-publisher --non-sticky openindiana.org
 </code></pre>
 
+<h4 id="setting-the-local-repository-as-primary-publisher">Setting the local repository as primary publisher</h4>
+<pre><code class="bash">pfexec pkg set-publisher --search-first userland
+</code></pre>
+
 <h4 id="optional-running-a-local-pkg-server-for-installation-on-other-zoneshosts">Optional: Running a local pkg server for installation on other zones/hosts</h4>
 <p>If you would like to use your oi-userland repository on other zones or hosts, you can run a pkg server:</p>
 <pre><code class="bash">$ pfexec svccfg -s  pkg/server
@@ -799,7 +803,7 @@ git commit
         </footer>
         <script>
             var base_url = "../..",
-                shortcuts = {"next": 78, "search": 83, "help": 191, "previous": 80};
+                shortcuts = {"search": 83, "next": 78, "previous": 80, "help": 191};
         </script>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>
