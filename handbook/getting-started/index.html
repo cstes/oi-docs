@@ -581,7 +581,8 @@ Always verify your backed up data.</p>
 <p>By default the OpenIndiana installer creates an EFI partition using a GPT partition table.
 Using this option, OpenIndiana will use the entire disk.
 No other operating system can share the same disk.</p>
-<p>Optionally you may use a legacy MBR partition.
+<p>Optionally you may use an existing zpool.</p>
+<p>Another option is to use a legacy MBR partition.
 MBR partitions will allow you to create multiple partitions.
 MBR will also support dual booting another operating system.</p>
 <p>Another option is to install to a virtual machine.</p>
@@ -2765,7 +2766,7 @@ Write about:</p>
         </footer>
         <script>
             var base_url = "../..",
-                shortcuts = {"search": 83, "next": 78, "previous": 80, "help": 191};
+                shortcuts = {"help": 191, "previous": 80, "next": 78, "search": 83};
         </script>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>

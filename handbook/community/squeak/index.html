@@ -307,7 +307,7 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#hipster-handbook-squeak-smalltalk-80">Hipster Handbook - Squeak Smalltalk-80</a></li>
+        <li class="main active"><a href="#hipster-handbook-squeak-cuis-and-smalltalk-80">Hipster Handbook - Squeak, Cuis and Smalltalk-80</a></li>
             <li><a href="#classic-vm-and-opensmalltalk-vm">Classic VM and OpenSmalltalk VM</a></li>
             <li><a href="#openindiana-prerequisites">OpenIndiana Prerequisites</a></li>
             <li><a href="#installing-squeak-4-the-classic-vm">Installing squeak-4, the classic VM</a></li>
@@ -336,17 +336,22 @@ Contributor(s): David Stes.
 -->
 
 <p><img src = "../../Openindiana.png"></p>
-<h1 id="hipster-handbook-squeak-smalltalk-80">Hipster Handbook - Squeak Smalltalk-80</h1>
-<p>The following notes document the steps to install Squeak on OpenIndiana Hipster, and how to use this implementation of Smalltalk-80.</p>
+<h1 id="hipster-handbook-squeak-cuis-and-smalltalk-80">Hipster Handbook - Squeak, Cuis and Smalltalk-80</h1>
+<p>The following notes document the steps to install Squeak and Cuis on OpenIndiana Hipster, and how to use these implementations of Smalltalk-80.</p>
 <p>Squeak consists of a VM (virtual machine) and Smalltalk images.  You can find Smalltalk images at <a href= "http://files.squeak.org" target="_blank">files.squeak.org</a> or at <a href="http://cuis-smalltalk.org" target="_blank">cuis-smalltalk.org</a>.</p>
-<p>See the <a href="http://www.squeak.org" target="_blank">Squeak website</a> for more and general information on Squeak, specifically the documentation section.  Also see the Squeak Wiki : <a href= "http://wiki.squeak.org" target="_blank">Squeak Wiki</a></p>
+<p>Cuis and Squeak both use the Squeak VM, but they offer different Smalltalk images.  The Squeak images have traditional MVC (Model, View, Controller) and Morphic graphical user interface classes.   Cuis has Morphic-3, which is an enhanced set of Morphic classes.</p>
+<p>See the <a href="http://www.squeak.org" target="_blank">Squeak website</a> for more and general information on Squeak, specifically the documentation section.  See <a href="http://cuis-smalltalk.org" target="_blank">cuis-smalltalk.org</a> for more info Cuis.  Also see the Squeak Wiki : <a href= "http://wiki.squeak.org" target="_blank">Squeak Wiki</a></p>
 <h2 id="classic-vm-and-opensmalltalk-vm">Classic VM and OpenSmalltalk VM</h2>
 <p>There are currently three Squeak packages for OpenIndiana : squeak-4, squeak-5 and squeak-5c.</p>
 <p>The squeak-4 package corresponds to the classic virtual machine (VM).  The squeak-5 packages are OpenSmalltalk based virtual machines, where squeak-5 is the OpenSmalltalk stack VM and squeak-5c is the OpenSmalltalk cog VM.</p>
-<p>The following screenshot illustrates squeak-4, version 4.19.3, running on OpenIndiana, playing bachFugue through pulseaudio, and with a classical Smalltalk bouncing atoms animation :</p>
+<p>A first screenshot illustrates squeak-4, version 4.19.6, running on OpenIndiana,with an old style MVC (Model, View, Controller) look and feel :</p>
+<p><img alt="mvc" src="../oi-squeak-4-mvc.png" /></p>
+<p>The following screenshot illustrates squeak-4, version 4.19.3, with the (default) Morphic user interface, running on OpenIndiana, playing bachFugue through pulseaudio, and with a classical Smalltalk bouncing atoms animation :</p>
 <p><img alt="bouncing atoms" src="../atoms-4.19.3-oi.png" /></p>
 <p>Squeak has a Test Runner.  The following screenshot illustrates squeak-4 and the results of running a number of tests :</p>
 <p><img alt="test run atoms" src="../testrun-4.19.3-oi.png" /></p>
+<p>The last screenshot illustrates the squeak 4.19.6 running the Cuis Smalltalk system, with the Cuis Morphic userinterface and SVG (Scalable Vector Graphics) support.   The Squeak VM for OpenIndiana has a SVGPluginEngine for fast rendering and manipulation of Scalable Vector Graphics :</p>
+<p><img alt="cuis magician" src="../oi-cuis-magician.png" /></p>
 <h2 id="openindiana-prerequisites">OpenIndiana Prerequisites</h2>
 <p>Before installing, the OpenIndiana system should have some required packages installed.</p>
 <p>To check the required dependencies for Squeak, use the command:</p>
@@ -534,7 +539,7 @@ If you run squeak-5 in a zone, you may also have to set the privilege limit:</p>
         </footer>
         <script>
             var base_url = "../../..",
-                shortcuts = {"search": 83, "next": 78, "previous": 80, "help": 191};
+                shortcuts = {"help": 191, "previous": 80, "next": 78, "search": 83};
         </script>
         <script src="../../../js/base.js" defer></script>
         <script src="../../../search/main.js" defer></script>
