@@ -555,38 +555,35 @@ Note, these instructions were not tested on modern OpenIndiana versions and pres
 </div>
 
 <h2 id="building-oi-build">Building oi-build</h2>
+<p><i class="fa fa-exclamation-triangle fa-lg" aria-hidden="true"></i> <strong>CAUTION:</strong>
 <div class="well">
-<font color="red">oi-build is a legacy consolidation which was superceded with oi-userland !!!</font>
+<strong>oi-build is a legacy consolidation which was superceded with oi-userland !!!</strong>
 For  building oi-userland see <a href="../userland/">Building with oi-userland</a>
-</div>
-
+</div></p>
 <p>Following instructions describe building oi-build on legacy OpenIndiana /dev distribution.</p>
-<p><b>oi-build</b> is OpenIndiana's primary build framework for post-oi_151 development. It is set to replace all existing consolidations, vastly simplifying how we build the operating system.</p>
+<p><strong>oi-build</strong> is OpenIndiana's primary build framework for post-oi_151 development. It is set to replace all existing consolidations, vastly simplifying how we build the operating system.</p>
 <p>oi-build is also tied into our continuous integration platform. When an update is committed to the oi-build mercurial repository, an automated build is kicked off. This will then automatically publish the built package to the /experimental repo, or generate an email alert if the build failed (to be completed).</p>
 <h3 id="oi-build-overview">oi-build overview</h3>
 <p>oi-build is a fork of Oracle's userland-gate, which we have extended and added additional software to. The layout is very similar.</p>
 <p>Inside oi-build is a directory called <code>components</code>, under which lives a directory for each software package. Inside each of these software package directories is a main <code>Makefile</code>, as well as one or more <code>.p5m</code> IPS manifest files, and there may also be license files and patches.</p>
 <p>The <code>Makefile</code> essentially contains a "build recipe". To build a piece of software, you simply <code>cd</code> into the directory of the software, and type <code>make TARGET</code>, where <code>TARGET</code> can be one of:</p>
 <ul>
-<li><b>prep</b> : Download, extract and patch the software archive</li>
-<li><b>build</b> : Build the software</li>
-<li><b>install</b> : Install the software into the prototype directory</li>
-<li><b>sample-manifest</b> : Create a sample manifest file in the build directory</li>
-<li><b>publish</b> : Publish the software to the local userland IPS repo</li>
+<li><strong>prep</strong> : Download, extract and patch the software archive</li>
+<li><strong>build</strong> : Build the software</li>
+<li><strong>install</strong> : Install the software into the prototype directory</li>
+<li><strong>sample-manifest</strong> : Create a sample manifest file in the build directory</li>
+<li><strong>publish</strong> : Publish the software to the local userland IPS repo</li>
 </ul>
 <p>For more details about writing Makefiles for userland, see userland Makefile targets and variables</p>
+<p><i class="fa fa-info-circle fa-lg" aria-hidden="true"></i> <strong>NOTE:</strong>
 <div class="well">
-Before adding new packages to illumos-userland...
-
-Before considering adding a new package to oi-build, please check first whether someone else is working on the package by checking the issue tracker.
+Before adding new packages to illumos-userland... Before considering adding a new package to oi-build, please check first whether someone else is working on the package by checking the issue tracker.</p>
 <ul>
 <li>If you don't find anyone already working on a port, please register your effort by opening an issue.</li>
 <li>If you wish to update an existing port, look at the log for the component Makefile ("hg log Makefile") and make sure you either contact the person who last updated the Makefile or include them on notifications for the issue by ticking their name.</li>
 </ul>
-
-This will ensure efforts aren't duplicated and help to ensure sanity and comity amongst project members.
-</div>
-
+<p>This will ensure efforts aren't duplicated and help to ensure sanity and comity amongst project members.
+</div></p>
 <h3 id="setting-up-your-build-environment">Setting up your build environment</h3>
 <p>We strongly recommend building packages inside a fresh local zone set up exclusively for building.</p>
 <p>Some suggestions about build environment (dataset layouts, etc.) can also be found in the illumos wiki: <a href="https://illumos.org/docs/developers/build/">How to build illumos</a> (note however that compilers required for the core OS may be different than those acceptable for userland software).</p>
@@ -666,7 +663,7 @@ gmake setup
 gmake setup COMPILER=gcc
 </code></pre>
 
-<p><b>Important:</b> Checking your environment</p>
+<p><strong>Important:</strong> Checking your environment</p>
 <p>Make the check-environment target to check your environment is set up correctly:</p>
 <pre><code class="bash">gmake check-environment
 </code></pre>
@@ -713,10 +710,10 @@ Approved by: My Name &lt;my.name@mydomain.net&gt;
 <p>When committing changes on behalf of someone else the commit message remains the same but you must pass the committer's name to hg commit.
 hg commit -u 'Contributor Name <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#99;&#111;&#110;&#116;&#114;&#105;&#98;&#117;&#116;&#111;&#114;&#46;&#110;&#97;&#109;&#101;&#64;&#102;&#97;&#107;&#101;&#46;&#110;&#101;&#116;">&#99;&#111;&#110;&#116;&#114;&#105;&#98;&#117;&#116;&#111;&#114;&#46;&#110;&#97;&#109;&#101;&#64;&#102;&#97;&#107;&#101;&#46;&#110;&#101;&#116;</a>'</p>
 <h2 id="building-ipspkg">Building IPS/pkg</h2>
+<p><i class="fa fa-info-circle fa-lg" aria-hidden="true"></i> <strong>NOTE:</strong>
 <div class="well">
 For building IPS delivered with modern OpenIndiana, use <a href="https://github.com/OpenIndiana/oi-userland/tree/oi/hipster/components/openindiana/pkg">openindiana/pkg</a> oi-userland component.
-</div>
-
+</div></p>
 <p>Following instructions describe building pkg on legacy OpenIndiana /dev distribution.</p>
 <p>Make sure you have Sun Studio installed.</p>
 <p>Install dependencies:</p>
@@ -982,10 +979,10 @@ make
 
 <p>SVR4 packages will be placed into ${HOME}/packages.</p>
 <h2 id="building-slim_source">Building slim_source</h2>
+<p><i class="fa fa-info-circle fa-lg" aria-hidden="true"></i> <strong>NOTE:</strong>
 <div class="well">
-For building slim_source used in modern OpenIndiana, use <a href="https://github.com/OpenIndiana/oi-userland/tree/oi/hipster/components/openindiana/slim_source">openindiana/slim_source</a> oi-userland component.
-</div>
-
+For building slim_source used in modern OpenIndiana, use <a href="https://github.com/OpenIndiana/oi-userland/tree/oi/hipster/components/openindiana/slim_source&quot;">openindiana/slim_source</a> oi-userland component.
+</div></p>
 <p>Following instructions describe building slim_source on legacy OpenIndiana /dev distribution.</p>
 <p><strong>Build Environment</strong>
 <div class="well">
@@ -1050,7 +1047,7 @@ echo 'export SPRO_ROOT=/opt/sunstudio12.1' &gt;&gt; developer.sh
         </footer>
         <script>
             var base_url = "../..",
-                shortcuts = {"previous": 80, "next": 78, "help": 191, "search": 83};
+                shortcuts = {"next": 78, "help": 191, "search": 83, "previous": 80};
         </script>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>

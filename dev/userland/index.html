@@ -429,13 +429,13 @@ The complete set of instructions to build one or more related packages is called
 </table>
 <p><i class="fa fa-info-circle fa-lg" aria-hidden="true"></i> <strong>NOTE:</strong>
 <div class="well">
-<p><b>Before adding new packages to oi-userland...</b></p>
-Before considering adding a new package to oi-userland, please check first whether someone else is working on the package by checking the issue tracker, mailing <a href="mailto:oi-dev@openindiana.org">oi-dev@openindiana.org</a> or asking on the IRC (#oi-dev at irc.freenode.net)
+<strong>Before adding new packages to oi-userland...</strong></p>
+<p>Before considering adding a new package to oi-userland, please check first whether someone else is working on the package by checking the issue tracker, mailing <a href="mailto:oi-dev@openindiana.org">oi-dev@openindiana.org</a> or asking on the IRC (#oi-dev at irc.freenode.net)</p>
 <ul>
 <li>If you don't find anyone already working on a port, please register your effort by opening an issue.</li>
 <li>If you wish to update an existing port, look at the log for the component Makefile ("git log Makefile") and make sure you either contact the person who last updated the Makefile or include them on notifications for the issue by ticking their name.</li>
 </ul>
-This will ensure efforts aren't duplicated and help to ensure sanity and comity amongst project members.
+<p>This will ensure efforts aren't duplicated and help to ensure sanity and comity amongst project members.
 </div></p>
 <h3 id="setting-up-your-build-environment">Setting up your build environment</h3>
 <p>We strongly recommend building packages inside a fresh local zone set up exclusively for building. See <a href="../../handbook/systems-administration/#quick-setup-example">Quick zone setup example</a> for simple instructions.</p>
@@ -590,12 +590,12 @@ COMPONENT_LICENSE_FILE= $(COMPONENT_NAME).license
 </tr>
 <tr>
 <td>COMPONENT_SRC</td>
-<td>jpeg-$(LIBJPEG_API_VERSION)</td>
+<td><code>jpeg-$(LIBJPEG_API_VERSION)</code></td>
 <td>The name of source after unpacking the archive</td>
 </tr>
 <tr>
 <td>COMPONENT_ARCHIVE</td>
-<td>$(COMPONENT_NAME)-$(COMPONENT_VERSION).tar.gz</td>
+<td><code>$(COMPONENT_NAME)-$(COMPONENT_VERSION).tar.gz</code></td>
 <td>The software archive</td>
 </tr>
 <tr>
@@ -605,7 +605,7 @@ COMPONENT_LICENSE_FILE= $(COMPONENT_NAME).license
 </tr>
 <tr>
 <td>COMPONENT_ARCHIVE_URL</td>
-<td>http://www.ijg.org/files/jpegsrc.v$(LIBJPEG_API_VERSION).tar.gz</td>
+<td><code>http://www.ijg.org/files/jpegsrc.v$(LIBJPEG_API_VERSION).tar.gz</code></td>
 <td>The URI to get the COMPONENT_ARCHIVE</td>
 </tr>
 <tr>
@@ -615,7 +615,7 @@ COMPONENT_LICENSE_FILE= $(COMPONENT_NAME).license
 </tr>
 <tr>
 <td>COMPONENT_LICENSE_FILE</td>
-<td>$(COMPONENT_NAME).license</td>
+<td><code>$(COMPONENT_NAME).license</code></td>
 <td>The file with license text</td>
 </tr>
 </tbody>
@@ -803,7 +803,7 @@ git commit
         </footer>
         <script>
             var base_url = "../..",
-                shortcuts = {"previous": 80, "next": 78, "help": 191, "search": 83};
+                shortcuts = {"next": 78, "help": 191, "search": 83, "previous": 80};
         </script>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>

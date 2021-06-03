@@ -362,12 +362,9 @@ All Rights Reserved. (Contributor contact(s):________________[Insert hyperlink/a
 <h1 id="hipster-handbook-getting-started-with-openindiana">Hipster Handbook - Getting Started with OpenIndiana</h1>
 <p><i class="fa fa-info-circle fa-lg" aria-hidden="true"></i> <strong>NOTE:</strong>
 <div class="well"></p>
-<p>This is a <b>DRAFT</b> document which may contain errors!</p>
-
+<p>This is a <strong>DRAFT</strong> document which may contain errors!</p>
 <p>Help us improve and expand this site.</p>
-
-<p>Please see the <b>Contrib</b> section for more details about joining the OpenIndiana Documentation Team.</p>
-
+<p>Please see the <strong>Contrib</strong> section for more details about joining the OpenIndiana Documentation Team.</p>
 </div>
 
 <h2 id="introduction">Introduction</h2>
@@ -415,15 +412,14 @@ Ideally suited for both workstations and servers, simply choose the installer ty
 <p><i class="fa fa-info-circle fa-lg" aria-hidden="true"></i> <strong>NOTE:</strong>
 <div class="well"></p>
 <ul>
-  <li>The legacy oi-dev-151x branch is no longer maintained.</li>
-  <li>While upgrades to Hipster are possible, it can only be performed by doing it in stages.</li>
-  <ul>
-    <li>First upgrade from oi-dev to Hipster-2015, and verify the system has been updated to the latest 2015.</li>
-    <li>Only then may you switch to the current Hipster repository and update again.</li>
-    <li><a href="https://wiki.openindiana.org/pages/viewpage.action?pageId=30802657">For more details, click here for upgrade instructions</a></li>
-  </ul>
+<li>The legacy oi-dev-151x branch is no longer maintained.</li>
+<li>While upgrades to Hipster are possible, it can only be performed by doing it in stages.<ul>
+<li>First upgrade from oi-dev to Hipster-2015, and verify the system has been updated to the latest 2015.</li>
+<li>Only then may you switch to the current Hipster repository and update again.</li>
+<li><a href="https://wiki.openindiana.org/pages/viewpage.action?pageId=30802657">For more details, click here for upgrade instructions</a></li>
 </ul>
-
+</li>
+</ul>
 </div>
 
 <p><i class="fa fa-exclamation-triangle fa-lg" aria-hidden="true"></i> <strong>CAUTION:</strong>
@@ -467,12 +463,11 @@ As the FAQ evolves, try to keep this section in sync.
 <p><i class="fa fa-info-circle fa-lg" aria-hidden="true"></i> <strong>NOTE:</strong>
 <div class="well"></p>
 <ul>
-  <li>For the best performance (and to reduce the possibility of disk swapping), allocate 4GB RAM or more.</li>
-  <li>For desktops, ensure total system memory (RAM + swap) are at least 4GB or greater.</li>
-  <li>The default size of the OpenIndiana swap file is 50% of installed memory.</li>
-  <li>Minimum and maximum default swap allocations are 512MB and 32GB respectively.</li>
+<li>For the best performance (and to reduce the possibility of disk swapping), allocate 4GB RAM or more.</li>
+<li>For desktops, ensure total system memory (RAM + swap) are at least 4GB or greater.</li>
+<li>The default size of the OpenIndiana swap file is 50% of installed memory.</li>
+<li>Minimum and maximum default swap allocations are 512MB and 32GB respectively.</li>
 </ul>
-
 </div>
 
 <h2 id="exploring-openindiana-hipster">Exploring OpenIndiana Hipster</h2>
@@ -805,16 +800,16 @@ OpenIndiana Hipster does not yet support UEFI.</p>
 <p><i class="fa fa-info-circle fa-lg" aria-hidden="true"></i> <strong>NOTE:</strong>
 <div class="well"></p>
 <ul>
-<li>Header files are only required when writing a legacy image <b>AND</b> using the dd utility.<ul>
-<li>Header files are <b>NOT</b> required when writing current images.</li>
-<li>For example: The Hipster 2016.10 release, does <b>NOT</b> require header files.</li>
+<li>Header files are only required when writing a legacy image <strong>AND</strong> using the dd utility.<ul>
+<li>Header files are <strong>NOT</strong> required when writing current images.</li>
+<li>For example: The Hipster 2016.10 release, does <strong>NOT</strong> require header files.</li>
 </ul>
 </li>
 </ul>
 </div>
 
 <ul>
-<li>Download the appropriate OpenIndiana <a href="http://dlc.openindiana.org/isos/archive/1G.header">1G</a> or <a href="http://dlc.openindiana.org/isos/archive/2G.header">2G</a> header file<ul>
+<li>Download the appropriate OpenIndiana <a href="http://dlc.openindiana.org/isos/archive/1G.header&quot;">1G</a> or <a href="http://dlc.openindiana.org/isos/archive/2G.header">2G</a> header file<ul>
 <li>There are 2 unique USB header files (1G and 2G).</li>
 <li>Please ensure you have selected the correct file as the files are <strong>NOT</strong> interchangeable.<ul>
 <li>The 1G.header is only suitable for use with the text installer (Command line console).</li>
@@ -1014,7 +1009,7 @@ See the notes below for optimizing OpenIndiana for several popular hypervisors.<
 </tr>
 <tr>
 <td>KVM</td>
-<td><ul><li>OS type = Sun OpenSolaris</li><li>Disk = SATA</li><li>Remove USB Tablet</li><li>NIC = e1000</li><li>sound = AC97</li><li>Processor = Copy host CPU configuration</li><li>Disable CPU feature <em>'xsave'</em></li><li>Video = QXL (QXL driver not supported, but the extra video memory helps)</li><li>Display = VNC (Spice not supported)</li></ul></td>
+<td>OS type = Sun OpenSolaris <br>Disk = SATA <br>Remove USB Tablet <br>NIC = e1000 <br>sound = AC97 <br>Processor = Copy host CPU configuration <br>Disable CPU feature <em>'xsave'</em> <br>Video = QXL (QXL driver not supported, but the extra video memory helps) <br>Display = VNC (Spice not supported)</td>
 </tr>
 <tr>
 <td>Hyper-V</td>
@@ -1038,7 +1033,7 @@ See the notes below for optimizing OpenIndiana for several popular hypervisors.<
 </ul>
 <p><i class="fa fa-info-circle fa-lg" aria-hidden="true"></i> <strong>NOTE:</strong>
 <div class="well"></p>
-<p>The OpenIndiana installer will automatically boot option # <b>1. Boot Multi User</b> within 10 seconds.</p>
+<p>The OpenIndiana installer will automatically boot option # <strong>1. Boot Multi User</strong> within 10 seconds.</p>
 <ul>
 <li>To pause the Autoboot timer, press the <code>Space</code> key.</li>
 </ul>
@@ -1261,8 +1256,8 @@ Other existing partitions are not changed.
 Select the appropriate installer option by clicking the corresponding desktop installer icon.</p>
 <p><i class="fa fa-info-circle fa-lg" aria-hidden="true"></i> <strong>NOTE:</strong>
 <div class="well"></p>
-<p><b>New for the Hipster 2016.10 release</b></p>
-<p>Selecting the <b><i>Install OpenIndiana using the Text Installer</i></b> desktop installer option provides new installation capabilities.</p>
+<p><strong>New for the Hipster 2016.10 release</strong></p>
+<p>Selecting the <strong><em>Install OpenIndiana using the Text Installer</em></strong> desktop installer option provides new installation capabilities.</p>
 <p>In addition to installing OpenIndiana to single disks, the following are now also supported:</p>
 <ul>
 <li>Mirrors</li>
@@ -1508,28 +1503,28 @@ The text based guided install starts and runs within a command line console.
 Navigation within the installer is performed by pressing specifically designated navigation keys (<code>F2</code>, Tab, etc.).</p>
 <p>The instructions for performing a text based install apply to the following installation scenarios:</p>
 <ul>
-  <li> Launching the text based installer icon from the Live Media (GUI) desktop.</li>
-  <li> Beginning a text based installation by booting from the OpenIndiana text based installer.</li>
+<li>Launching the text based installer icon from the Live Media (GUI) desktop.</li>
+<li>Beginning a text based installation by booting from the OpenIndiana text based installer.</li>
 </ul>
-
 <p><br>
-<b>New for the 2016.10 release</b></p>
+<strong>New for the 2016.10 release</strong></p>
 <p>Mirrors and RAIDZ are now supported install options!</p>
 <ul>
-  <li>To install to a mirror, select 2 or more disks.</li>
-  <li>To install to RAIDZ, select 3 or more disks.</li>
+<li>To install to a mirror, select 2 or more disks.</li>
+<li>To install to RAIDZ, select 3 or more disks.</li>
 </ul>
-
 <p><br>
-<b>GUI Desktop may be added post-installation</b>
-<Ul>
- <li>To install MATE Desktop Environment</li>
- <pre>
- # pkg install mate_install
- # pkg uninstall mate_install
- # init 6
- </pre>
-</div></p>
+<strong>GUI Desktop may be added post-installation</strong></p>
+<ul>
+<li>To install MATE Desktop Environment</li>
+</ul>
+<pre><code>pkg install mate_install
+pkg uninstall mate_install
+init 6
+</code></pre>
+
+</div>
+
 <p><a name="welcome-screen"></a>
 <img alt="Welcome Screen" src="../images/text_install/text_install_01.png" /></p>
 <p>The text based installation process begins with the welcome screen, which provides the following information:</p>
@@ -1658,9 +1653,9 @@ We have illustrated this screen twice as 2 different tasks are required.</p>
 <p>Select between the options using the up and down arrow keys.</p>
 <p>When ready, press the <code>F2</code> key to continue.</p>
 <p><img alt="Network 3" src="../images/text_install/text_install_09.png" /></p>
-<p><i class="fa fa-info-circle fa-lg" aria-hidden="true"></i> <strong>NOTE:</strong>
+<p><i class="fa fa-info-circle fa-lg" aria-hidden="true"></i> <strong>NOTE:*<em>
 <div class="well">
-This screen will be available only when the <b><i>Manually</i></b> configure network option has been selected.</p>
+This screen will be available only when the </em></strong>Manually*** configure network option has been selected.</p>
 <ul>
 <li>The values illustrated above are for example only, do not use them.</li>
 <li>Substitute each field with correct values for your network.</li>
@@ -1681,9 +1676,9 @@ This screen will be available only when the <b><i>Manually</i></b> configure net
 <p>The next few screens illustrate time zone configuration.</p>
 <p>Select your time zone <strong><em>region</em></strong> by navigating up and down with the arrow keys.</p>
 <p>When ready, press the <code>F2</code> key to continue.</p>
-<p><i class="fa fa-info-circle fa-lg" aria-hidden="true"></i> <strong>NOTE:</strong>
+<p><i class="fa fa-info-circle fa-lg" aria-hidden="true"></i> <strong>NOTE:*<em>
 <div class="well">
-When selecting the <b><i>UTC/GMT</i></b> time zone region, only this screen will be presented.
+When selecting the </em></strong>UTC/GMT*** time zone region, only this screen will be presented.
 </div></p>
 <p><img alt="Time Zone - Location" src="../images/text_install/text_install_11.png" /></p>
 <p>Select your time zone <strong><em>location</em></strong> by navigating up and down with the arrow keys.</p>
@@ -2563,15 +2558,15 @@ Or, use the <code>pkg install packagename</code> with the <code>-R</code> option
 </li>
 </ul>
 <div class="well">
-When <code>pkg</code> creates new boot environment, it determines its name using <code>auto-be-name</code> image property.
-When prefixed with "time:" string, the remaining part of property is interpreted as <code>strftime(3C)</code> argument.
-If <code>pkg</code> can't produce unique boot environment name based on auto-be-name image property,
+When `pkg` creates new boot environment, it determines its name using `auto-be-name` image property.
+When prefixed with "time:" string, the remaining part of property is interpreted as `strftime(3C)` argument.
+If `pkg` can't produce unique boot environment name based on auto-be-name image property,
 it uses the property as base to generate unique name, appending numerical suffix prefixed by "-" symbol.
 Note, that due to name generation rules, any numerical suffix, prefixed by "-", can be incremented to
-generate unique name, so given "time:openindiana-%Y-%m-%d" <code>auto-be-name image</code> property value
-(which is not recommended), <code>pkg</code> will produce boot environment names ending with current date, current date + 1 and so on.
-By default <code>auto-be-name</code> is set to "time:openindiana-%Y:%m:%d", so that boot environments are named like
-"openindiana-2019:03:29". You can get current value using <code>pkg property</code> command and set it with <code>pkg set-property</code>.
+generate unique name, so given "time:openindiana-%Y-%m-%d" `auto-be-name image` property value
+(which is not recommended), `pkg` will produce boot environment names ending with current date, current date + 1 and so on.
+By default `auto-be-name` is set to "time:openindiana-%Y:%m:%d", so that boot environments are named like
+"openindiana-2019:03:29". You can get current value using `pkg property` command and set it with `pkg set-property`.
 </div>
 
 <h3 id="features-of-the-beadm-utility">Features of the beadm utility</h3>
@@ -2766,7 +2761,7 @@ Write about:</p>
         </footer>
         <script>
             var base_url = "../..",
-                shortcuts = {"previous": 80, "next": 78, "help": 191, "search": 83};
+                shortcuts = {"next": 78, "help": 191, "search": 83, "previous": 80};
         </script>
         <script src="../../js/base.js" defer></script>
         <script src="../../search/main.js" defer></script>
